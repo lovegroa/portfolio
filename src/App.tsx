@@ -1,25 +1,48 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {useEffect, useRef} from 'react';
+import {MainContainer, ContentContainer} from './app.styles';
+import AboutMe from './sections/about-me/about-me.section';
+import Navigation from './components/navigation/navigation.component';
+import Hero from './sections/hero/hero.section';
+import Skills from './sections/skills/skills.section';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import Projects from './sections/projects/projects.section';
+import Experience from './sections/experience/experience.section';
+import Grid from './components/grid/grid.component';
+import Contact from './sections/contact/contact.section';
 
 function App() {
+  const aboutMeRef = useRef(null);
+  const skillsRef = useRef(null);
+  const projectsRef = useRef(null);
+  const experienceRef = useRef(null);
+  const contactRef = useRef(null);
+
+  useEffect(() => {
+    Aos.init({});
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <MainContainer>
+        <Grid />
+        <Navigation
+          aboutMeRef={aboutMeRef}
+          skillsRef={skillsRef}
+          projectsRef={projectsRef}
+          experienceRef={experienceRef}
+          contactRef={contactRef}
+        />
+        <Hero />
+        <ContentContainer>
+          <AboutMe ref2={aboutMeRef} />
+          <Skills ref2={skillsRef} />
+          <Projects ref2={projectsRef} />
+          <Experience ref2={experienceRef} />
+          <Contact ref2={contactRef} />
+        </ContentContainer>
+      </MainContainer>
+    </>
   );
 }
 
