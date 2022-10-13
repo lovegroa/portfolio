@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import {
   Chart as ChartJS,
   RadialLinearScale,
@@ -30,11 +30,13 @@ export const RadarChart = ({
   chartData: CompChartData;
   width: number;
 }) => {
-  let fontSize = 14;
+  const [fontSize, setFontSize] = useState(14);
 
-  if (window.outerWidth < 600) {
-    fontSize = 10;
-  }
+  useEffect(() => {
+    if (window.outerWidth < 600) {
+      setFontSize(10);
+    }
+  }, []);
 
   const data: ChartData<'radar'> = {
     labels: chartData.map(item => item[0]),

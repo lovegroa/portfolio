@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {SectionContainer} from '../../app.styles';
+import {SectionContainer} from '../../styles/app.styles';
 
 export const ExperienceContainer = styled(SectionContainer)`
   display: flex;

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {BoxContainer, SectionContainer} from '../../app.styles';
+import {BoxContainer, SectionContainer} from '../../styles/app.styles';
 
 export const SkillsContainer = styled(SectionContainer)`
   @media screen and (max-width: 600px) {
