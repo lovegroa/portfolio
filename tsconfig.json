@@ -19,9 +19,10 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx",
+    "jsx": "preserve",
     "rootDir": ".",
-    "outDir": "build"
+    "outDir": "build",
+    "incremental": true
   },
   "include": [
     "src/**/*.ts",
