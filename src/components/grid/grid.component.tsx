@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+import ScrollDown from '../scroll-down/scroll-down.component';
 import {Cell, GridContainer} from './grid.styles';
 
 const Grid = () => {
@@ -6,8 +7,17 @@ const Grid = () => {
   const [count, setCount] = useState(0);
   const [divs, setDivs] = useState<string[]>([]);
   const [start, setStart] = useState(true);
+  const [scrollPosition, setScrollPosition] = useState(0);
 
   useEffect(() => {
+    const listenToScroll = () => {
+      setScrollPosition(
+        document.body.scrollTop || document.documentElement.scrollTop
+      );
+    };
+
+    window.addEventListener('scroll', listenToScroll);
+
     const height = window.outerHeight;
     const width = window.outerWidth;
     let horizontalCells = 20;
@@ -43,6 +53,7 @@ const Grid = () => {
           className={number === index || start ? 'hover' : ''}
         ></Cell>
       ))}
+      {scrollPosition > 100 ? <></> : <ScrollDown />}
     </GridContainer>
   );
 };
