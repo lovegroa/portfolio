@@ -27,30 +27,28 @@ const AboutMe = ({ref2}) => {
       </AboutMeBoxContainer>
       <AboutMeBoxContainer>
         <p data-aos="fade-left">
-          I am a frontend focussed - Full Stack Developer. I am currently
-          working in London but will soon be moving to Japan with my partner,
-          who is half Japanese, to follow our dream of living in the country.
-          I’m even currently learning Japanese at Kings College London, to
-          support our move. I’ve been coding for over ten years, but over the
-          last year, I’ve completed a career change and switched from coding as
+          I am a frontend focussed - Full Stack Developer. Currently, I’m
+          working in London, but from the start of next year (2023), I’ll be
+          moving to Japan with my partner. I’m actively looking for
+          opportunities to work in Japan, and I’m currently learning Japanese.
+          I’ve been coding for over ten years, but over the last year, I’ve
+          completed a career change. In doing so, I have switched from coding as
           a hobby to a full-time profession.
         </p>
         <br />
         <p data-aos="fade-left">
-          As cliché as it is, I’m extremely passionate for what I do. I’ve spent
-          a large portion of my free time, teaching myself Python, JavaScript,
-          PHP, and VBA, and I enjoy building apps that meet specific needs in my
-          life. I’ve built apps to; help my buy a house, manage my fantasy
-          football team, and manage my personal cashflow to just name a few.
+          As cliché as it is, I am passionate about development. I enjoy
+          building apps that meet specific needs in my life. I have built apps
+          to; help me buy a house, manage my fantasy football team, and manage
+          my cash flow, to name a few. I’ve spent my free time teaching myself
+          JavaScript, TypeScript, Python, PHP, and VBA.
         </p>
         <br />
         <p data-aos="fade-left">
-          Previously, I worked as an award-winning marketer in the Finance
-          space, for a variety of investment and technology firms. My success
-          has always been linked to my ability to focus on the analytical side
-          of marketing, alongside my awareness of the commercial landscape I’m
-          operating within. Even as a marketer, I would code up tools where
-          possible.
+          Previously, I worked as an award-winning Marketer in Finance and
+          FinTech. In my career as a Marketer, my ability to focus on the
+          analytical elements has proved a real strength. Even as a marketer, I
+          would code up tools where possible.
         </p>
         <br />
         <p data-aos="fade-left">
