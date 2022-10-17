@@ -55,7 +55,7 @@ const AboutMe = ({ref2}) => {
         <br />
         <p data-aos="fade-left">
           Fundamentally, I’ve always centred myself around learning, and I’m
-          always looking to improve, what I do and how I do it, weather it be
+          always looking to improve, what I do and how I do it, whether it be
           new tools, languages, or even philosophies.
         </p>
         <br />
