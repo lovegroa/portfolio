@@ -19,6 +19,7 @@ type ProjectType = {
   backend: string[];
   img: string;
   link: string;
+  buttonText: string;
 };
 
 const Project = ({project, index}: {project: ProjectType; index: number}) => {
@@ -39,7 +40,7 @@ const Project = ({project, index}: {project: ProjectType; index: number}) => {
             <ButtonContainer>
               <a href={project.link} target="_blank">
                 <CheckItOutButton role="button">
-                  <span>Check it out</span>
+                  <span>{project.buttonText}</span>
                 </CheckItOutButton>
               </a>
             </ButtonContainer>

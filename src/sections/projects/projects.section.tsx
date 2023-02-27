@@ -35,6 +35,7 @@ const Projects = ({ref2}) => {
       backend: ['N/A'],
       img: '/pacman.png',
       link: 'https://lovegroa.github.io/pacman/',
+      buttonText: 'Check it out',
     },
     {
       title: '❤️ Money',
@@ -51,11 +52,15 @@ const Projects = ({ref2}) => {
 
       Username: TEST
       Password: TEST
+
+      Annoyingly, Heroku has decided to remove it's free tier, I am in the process of rehosting.
       `,
       frontend: ['Chart.js', 'Bootstrap', 'VanillaJS', 'Flask'],
       backend: ['Django', 'Mongo DB'],
       img: '/heart-money.png',
-      link: 'https://heart-money.herokuapp.com/',
+      //   link: 'https://heart-money.herokuapp.com/',
+      link: '',
+      buttonText: 'Rehosting soon!',
     },
     {
       title: 'FPL Vidi',
@@ -65,11 +70,15 @@ const Projects = ({ref2}) => {
       The tool uses the official FPL api to capture live data, and shows each user their mini-leagues, and how they are performing within each league.
 
       Whilst fixtures are being actively played, the 'vidiprinter' provides minute by minute updates on each players performance, only showing players relevant to that league.
+
+      Annoyingly, Heroku has decided to remove it's free tier, I am in the process of rehosting.
       `,
       frontend: ['TypeScript', 'React', 'Redux', 'Axios', 'Styled Components'],
       backend: ['TypeScript', 'Express', 'Axios'],
       img: '/fpl-vidi.png',
-      link: 'https://fpl-vidi.netlify.app/',
+      //   link: 'https://fpl-vidi.netlify.app/',
+      link: '',
+      buttonText: 'Rehosting soon!',
     },
   ];
 

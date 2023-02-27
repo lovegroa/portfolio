@@ -135,6 +135,7 @@ export const MainContainer = styled.div`
   p {
     font-size: 18px;
     font-weight: 200;
+    letter-spacing: 1px;
   }
 
   pre {

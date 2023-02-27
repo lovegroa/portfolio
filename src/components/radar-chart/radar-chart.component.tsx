@@ -60,6 +60,11 @@ export const RadarChart = ({
     plugins: {legend: {display: false}},
     backgroundColor: '#000000',
 
+    animation: {
+      duration: 2000, // Animation duration in milliseconds
+      easing: 'easeInOutQuad', // Animation easing function
+    },
+
     scales: {
       r: {
         suggestedMin: 0,
@@ -70,6 +75,12 @@ export const RadarChart = ({
         pointLabels: {
           color: '#ffffff',
           font: {size: fontSize},
+        },
+        grid: {
+          color: 'rgba(0, 0, 0, 0.2)',
+          borderColor: 'rgba(0, 0, 255, 0.3)',
+          borderWidth: 1,
+          //   circular: true,
         },
       },
     },

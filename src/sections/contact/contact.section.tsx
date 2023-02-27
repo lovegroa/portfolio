@@ -1,5 +1,9 @@
 import React, {useEffect, useRef} from 'react';
 import ContactForm from '../../components/contact-form/contact-form.component';
+import {
+  ButtonContainer,
+  CheckItOutButton,
+} from '../../components/project/project.styles';
 import useOnScreen from '../../utils/functions/useOnScreen';
 import {ContactContainer} from './contact.styles';
 
@@ -36,7 +40,11 @@ const Contact = ({ref2}) => {
             }}
             href="https://www.linkedin.com/in/alexlovegrove/"
           >
-            LinkedIn
+            <ButtonContainer>
+              <CheckItOutButton role="button">
+                <span>LinkedIn</span>
+              </CheckItOutButton>
+            </ButtonContainer>
           </a>
         </li>
         <li>
@@ -46,7 +54,11 @@ const Contact = ({ref2}) => {
             }}
             href="https://github.com/lovegroa"
           >
-            Github
+            <ButtonContainer>
+              <CheckItOutButton role="button">
+                <span>Github</span>
+              </CheckItOutButton>
+            </ButtonContainer>
           </a>
         </li>
       </ul>
