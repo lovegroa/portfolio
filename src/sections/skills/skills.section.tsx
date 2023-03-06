@@ -33,10 +33,10 @@ const Skills = ({ref2}) => {
 
   const skills: CompChartData = [
     ['TypeScript', 8],
-    ['JavaScript', 10],
-    ['CSS', 10],
-    ['HTML', 10],
-    ['React', 10],
+    ['JavaScript', 9],
+    ['CSS', 9],
+    ['HTML', 9],
+    ['React', 9],
     ['Express', 7],
     ['Node', 8],
     ['Swagger', 8],

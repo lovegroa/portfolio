@@ -53,13 +53,12 @@ const Projects = ({ref2}) => {
       Username: TEST
       Password: TEST
 
-      Annoyingly, Heroku has decided to remove it's free tier, I am in the process of rehosting.
       `,
       frontend: ['Chart.js', 'Bootstrap', 'VanillaJS', 'Flask'],
       backend: ['Django', 'Mongo DB'],
       img: '/heart-money.png',
-      //   link: 'https://heart-money.herokuapp.com/',
-      link: '',
+      link: 'https://finance-production-a61f.up.railway.app/',
+      //   link: '',
       buttonText: 'Rehosting soon!',
     },
     {
