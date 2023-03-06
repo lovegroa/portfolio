@@ -59,7 +59,7 @@ const Projects = ({ref2}) => {
       img: '/heart-money.png',
       link: 'https://finance-production-a61f.up.railway.app/',
       //   link: '',
-      buttonText: 'Rehosting soon!',
+      buttonText: 'Check it out',
     },
     {
       title: 'FPL Vidi',
