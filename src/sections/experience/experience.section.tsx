@@ -26,6 +26,19 @@ const Experience = ({ref2}) => {
 
   const timelineElements: TimelineElementData[] = [
     {
+      title: 'Software engineer',
+      company: 'Evolany',
+      location: 'Tokyo, Japan',
+      description: [
+        'Archeticted and configured a React based frontend to replace the exsiting any.js internal library',
+        'Implemented new deployment processes including precommit rules using Husky, CI/CD using CircleCI with automated testing, using Vitest and Playwrite',
+        'Leading a team to create Anybot Overseas, an international version of the core japanese chatbot product',
+        'Developed Line mini apps for clients',
+      ],
+      date: 'May 2023 - present',
+      icon: '/work.svg',
+    },
+    {
       title: 'Full Stack Developer',
       company: 'MediaSense',
       location: 'London, UK',
@@ -38,7 +51,7 @@ const Experience = ({ref2}) => {
         'Released the tool with Docker via AWS',
         'The tool is now being pitched to very well known FMCG brands',
       ],
-      date: 'March 2022 - present',
+      date: 'March 2022 - January 2023',
       icon: '/work.svg',
     },
     {
