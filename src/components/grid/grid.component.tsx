@@ -21,16 +21,17 @@ const Grid = () => {
     const height = window.outerHeight;
     const width = window.outerWidth;
     let horizontalCells = 20;
+    let noOfCells = 200;
 
     if (width < 600) {
-      horizontalCells = 5;
+      noOfCells = 50;
     }
 
     const cellWidth = width / horizontalCells;
     const cellHeight = cellWidth;
     const verticalCells = Math.round(height / cellHeight);
 
-    const noOfCells = verticalCells * horizontalCells;
+    // const noOfCells = verticalCells * horizontalCells;
 
     for (let index = 0; index < noOfCells; index++) {
       divs.push('');
