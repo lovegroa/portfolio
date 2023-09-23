@@ -64,7 +64,6 @@ const Navigation = ({
                   smooth={true}
                   offset={-110}
                   onClick={() => {
-                    console.log('test');
                     ref.current.scrollIntoView({
                       behavior: 'smooth',
                       inline: 'center',

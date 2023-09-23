@@ -4,6 +4,7 @@ import RadarChart, {
 } from '../../components/radar-chart/radar-chart.component';
 import useOnScreen from '../../utils/functions/useOnScreen';
 import {SkillsBoxContainer, SkillsContainer} from './skills.styles';
+import Wordcloud from '../../components/wordcloud/wordcloud';
 
 const Skills = ({ref2}) => {
   const ref = useRef<HTMLDivElement>(null);
@@ -14,7 +15,6 @@ const Skills = ({ref2}) => {
     if (isVisible) {
       if (ref2) {
         if (ref2.current) {
-          console.log(ref2.current);
           ref2.current.scrollIntoView({inline: 'center'});
         }
       }
@@ -53,7 +53,7 @@ const Skills = ({ref2}) => {
   return (
     <SkillsContainer id="skills">
       <SkillsBoxContainer ref={ref} data-aos="zoom-in-up">
-        <RadarChart width={width} chartData={skills} />
+        <Wordcloud width={1000} height={500} />
       </SkillsBoxContainer>
       <SkillsBoxContainer>
         <h2 data-aos="fade-down">Skills</h2>

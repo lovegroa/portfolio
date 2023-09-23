@@ -76,6 +76,7 @@ export const ProjectContainer = styled(SectionContainer)<ProjectContainerProps>`
 `;
 
 export const ProjectBoxContainer = styled(BoxContainer)`
+  padding: 1rem;
   img {
     object-fit: cover;
     width: 100%;
@@ -84,8 +85,9 @@ export const ProjectBoxContainer = styled(BoxContainer)`
 `;
 
 export const FrontendContainer = styled.div`
-  width: 100%;
+  width: 50%;
   ul {
+    border-right: 1px solid white;
     display: flex;
     flex-wrap: wrap;
     margin: 0;
@@ -101,8 +103,10 @@ export const FrontendContainer = styled.div`
   }
 `;
 export const BackendContainer = styled.div`
-  width: 100%;
+  width: 50%;
   ul {
+    /* border-left: 1px solid white; */
+
     display: flex;
     flex-wrap: wrap;
     margin: 0;
@@ -118,6 +122,7 @@ export const BackendContainer = styled.div`
 `;
 export const TechStackContainer = styled.div`
   width: 100%;
+  display: flex;
   h5 {
     padding: 10px;
   }

@@ -11,8 +11,10 @@ import {
   CheckItOutButton,
   ButtonContainer,
 } from './project.styles';
+import GameContainer from '../pacman/gameContainer.component';
+import Pacman from '../pacman/pacman.component';
 
-type ProjectType = {
+export type ProjectType = {
   title: string;
   description: string;
   frontend: string[];
@@ -20,6 +22,8 @@ type ProjectType = {
   img: string;
   link: string;
   buttonText: string;
+  pacman: boolean;
+  component: JSX.Element;
 };
 
 const Project = ({project, index}: {project: ProjectType; index: number}) => {
@@ -30,13 +34,15 @@ const Project = ({project, index}: {project: ProjectType; index: number}) => {
     <ProjectContainer flexDirection={isOdd ? 'row-reverse' : 'row'}>
       <ProjectBoxContainer data-aos="zoom-in-up">
         <h3>{project.title}</h3>
-        <img data-aos={fade} src={project.img} />
+        {project.pacman ? (
+          <Pacman />
+        ) : (
+          <img data-aos={fade} src={project.img} />
+        )}
       </ProjectBoxContainer>
       <ProjectBoxContainer>
-        <pre>{project.description}</pre>
-
         <ProjectDetailsContainer>
-          <DescriptionContainer data-aos={fade}>
+          {/* <DescriptionContainer data-aos={fade}>
             <ButtonContainer>
               <a href={project.link} target="_blank">
                 <CheckItOutButton role="button">
@@ -44,7 +50,7 @@ const Project = ({project, index}: {project: ProjectType; index: number}) => {
                 </CheckItOutButton>
               </a>
             </ButtonContainer>
-          </DescriptionContainer>
+          </DescriptionContainer> */}
           <TechStackOuterContainer data-aos={fade}>
             <h4>Tech Stack</h4>
             <TechStackContainer>
@@ -67,6 +73,9 @@ const Project = ({project, index}: {project: ProjectType; index: number}) => {
             </TechStackContainer>
           </TechStackOuterContainer>
         </ProjectDetailsContainer>
+        {project.component}
+
+        <pre>{project.description}</pre>
       </ProjectBoxContainer>
     </ProjectContainer>
   );

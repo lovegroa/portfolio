@@ -36,5 +36,24 @@ a:hover {
   box-sizing: border-box;
   background-color: rgba(0, 0, 0, 0);
   font-family: 'Manrope', sans-serif;
-  font-weight: 200;
+  font-weight: 400;
+}
+
+.wordcloud {
+  display: flex;
+  flex-direction: column;
+  user-select: none;
+}
+.wordcloud svg {
+  cursor: pointer;
+}
+
+.wordcloud label {
+  display: inline-flex;
+  align-items: center;
+  font-size: 14px;
+  margin-right: 8px;
+}
+.wordcloud textarea {
+  min-height: 100px;
 }

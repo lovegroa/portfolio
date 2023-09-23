@@ -5,7 +5,7 @@ export type TimelineElementData = {
   date: string;
   title: string;
   location: string;
-  company: string;
+  company?: string;
   description: string[];
   icon: string;
   grade?: string;

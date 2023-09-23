@@ -7,8 +7,6 @@ export const scrollIntoView = (parent: HTMLElement, child: HTMLElement) => {
     parentLeft = parentBounding.left,
     clientRight = clientBounding.right,
     clientLeft = clientBounding.left;
-  console.log({parentLeft, clientLeft});
-  console.log({parentRight, clientRight});
 
   if (parentLeft >= clientLeft) {
     scrollTo(parent, -(parentLeft - clientLeft), 300);
@@ -26,7 +24,6 @@ function scrollTo(element: HTMLElement, to: number, duration: number) {
 
     const val = easeInOutQuad(currentTime, start, to, duration);
     element.scrollLeft = val;
-    console.log({val});
 
     if (currentTime < duration) {
       setTimeout(animateScroll, increment);

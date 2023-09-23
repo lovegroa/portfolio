@@ -17,7 +17,6 @@ const Experience = ({ref2}) => {
     if (isVisible) {
       if (ref2) {
         if (ref2.current) {
-          console.log(ref2.current);
           ref2.current.scrollIntoView({inline: 'center'});
         }
       }
@@ -26,16 +25,16 @@ const Experience = ({ref2}) => {
 
   const timelineElements: TimelineElementData[] = [
     {
-      title: 'Software engineer',
+      title: 'Software Engineer',
       company: 'Evolany',
       location: 'Tokyo, Japan',
       description: [
-        'Archeticted and configured a React based frontend to replace the exsiting any.js internal library',
-        'Implemented new deployment processes including precommit rules using Husky, CI/CD using CircleCI with automated testing, using Vitest and Playwrite',
-        'Leading a team to create Anybot Overseas, an international version of the core japanese chatbot product',
-        'Developed Line mini apps for clients',
+        `Architected and configured a React-based admin console for a chatbot tool, enabling users to create and train chatbots on bespoke data`,
+        'Faced and conquered steep learning curves associated with integrating multiple technologies, including Prettier, ESLint, TypeScript, Husky, Vite, Vitest, Storybook, Chromatic, i18next, MUI, Axios, React Hook Form, TanStack Table, Zustand, and React Query',
+        `Developed reusable components, including a table with server side pagination leveraging TanStack Table`,
+        'Developed LINE mini-apps for clients, integrating with external client APIs using JavaScript and PHP to create loyalty card applications',
       ],
-      date: 'May 2023 - present',
+      date: 'May 2023 - September 2023',
       icon: '/work.svg',
     },
     {
@@ -43,20 +42,17 @@ const Experience = ({ref2}) => {
       company: 'MediaSense',
       location: 'London, UK',
       description: [
-        "Designed, developed and maintained apps to support the business' core initiatives",
-        'Hired as part of an innovate UK grant awarded by the UK Government',
-        'Delivered a UI as part of this project, significantly ahead of the deadline, and was scored top marks by the government',
-        'Engineered the frontend utilizing TypeScript, React and also Redux for state management',
-        'Also worked on the backend, developing the API using Node, Express and Swagger',
-        'Released the tool with Docker via AWS',
-        'The tool is now being pitched to very well known FMCG brands',
+        'Developed a new application using TypeScript, React, and Redux which allowed users to access and review media audits with secure access to Tableau charts embedded in the site',
+        'Created a specific template to support printing for use in offline meetings',
+        'Developed the API using Node, Express, and Swagger and released the tool using Docker on AWS',
+        'Created a data viewing tool in Typescript and React which allowed internal users to visually compare, select and group unstructured data accross excel sheets and generate SQL for use in Tableau',
+        'Maintained a suite of internal apps, fixing bugs across a variety of languages, including Clojure and Handlebars',
       ],
       date: 'March 2022 - January 2023',
       icon: '/work.svg',
     },
     {
       title: 'Software Development Immersive',
-      grade: 'Pass',
       company: 'General Assembly',
       location: 'Remote',
       description: [
@@ -116,7 +112,6 @@ const Experience = ({ref2}) => {
     },
     {
       title: 'Investment Management Certificate',
-      grade: 'Pass',
       company: 'CFA',
       location: 'London, UK',
       description: ['The Investment Environment', 'Investments in Practice'],
@@ -139,15 +134,24 @@ const Experience = ({ref2}) => {
       icon: '/work.svg',
     },
     {
+      title: 'White House Visit',
+      location: 'Washington DC, USA',
+      description: [
+        'The work we were doing on the NextGen Scholars program at UBS had received recognition from The White House.',
+        'We were invited to bring all 126 program participants on a private tour, and met with several senior political figures',
+      ],
+      date: 'January 2016',
+      icon: '/white-house.svg',
+    },
+    {
       title: 'Strategic Programs and Partnerships Coordinator',
       company: 'UBS',
-      location: 'London, UK',
+      location: 'New York, USA',
       description: [
         'Designed, implemented, and maintained a Salesforce CRM platform enabling colleagues across two organisations to track data',
         'Drafted content to present the firms programs externally and internally including a new microsite and intranet articles',
         'Reviewed wireframes and QA tested functionality of a new education-oriented social networking portal',
         "Arranged multiple high-touch, high-impact events including the Project Entrepreneur Launch, Attended by UBS's senior executive leadership",
-        'Coordinated a day-long trip for 150 students and 30 executives on a private tour of the White House with senior political figures',
         'Trained six team members to use Salesforce and created original user guides and tutorials to ensure user adoption',
       ],
       date: 'March 2015 - March 2016',

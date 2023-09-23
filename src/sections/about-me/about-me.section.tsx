@@ -15,7 +15,6 @@ const AboutMe = ({ref2}) => {
     if (isVisible) {
       if (ref2) {
         if (ref2.current) {
-          console.log(ref2.current);
           ref2.current.scrollIntoView({inline: 'center'});
         }
       }
@@ -31,40 +30,42 @@ const AboutMe = ({ref2}) => {
       </AboutMeBoxContainer>
       <AboutMeBoxContainer>
         <p data-aos="fade-left">
-          I'm currently on the lookout for exciting opportunities to work and
-          play in Tokyo! I've been pursuing my love for coding for over ten
-          years now, and I've recently turned my passion into a full-time
-          profession working this past year as a{' '}
-          <strong style={{fontWeight: 'bold', whiteSpace: 'nowrap'}}>
-            {' '}
-            Full Stack Developer
-          </strong>
-          . Creating apps that solve real-life problems is a thrill for me, and
-          I've built some pretty cool stuff so far - like an app that helps me
-          manage my fantasy football team, or one that helps me keep track of my
-          cash flow.
+          I'm on the lookout for exciting opportunities in London!
         </p>
         <br />
         <p data-aos="fade-left">
-          But don't let my love for coding fool you - I'm a fun-loving person at
-          heart! When I'm not geeking out over programming languages like
-          <strong style={{fontWeight: 'bold'}}> TypeScript</strong>,{' '}
-          <strong style={{fontWeight: 'bold'}}> React</strong>, and{' '}
-          <strong style={{fontWeight: 'bold'}}> SQL</strong>, you can usually
-          find me exploring new parts of the city, trying out new restaurants.
-          I'm also learning Japanese right now.
+          I’ll be back in the UK and available to start from the 1st of February
+          2024. If any opportunities arise before then and permit remote work,
+          please do reach out!
         </p>
-        <br />
-        <p data-aos="fade-left">
-          I used to be an award-winning marketer in Finance and FinTech, and my
-          analytical skills have always been a strong suit of mine. I even wrote
-          code to analyze and manipulate large datasets back when I was a
-          marketer! But my true passion lies in coding and constantly learning
-          new skills. I'm always on the lookout for exciting new tools and
-          philosophies that can help me become an even better developer.
-        </p>
-        <br />
 
+        <br />
+        <p data-aos="fade-left">
+          I am a dedicated developer with a passion for{' '}
+          <strong style={{fontWeight: 'bold'}}>React</strong> and{' '}
+          <strong style={{fontWeight: 'bold'}}>TypeScript</strong>. Within a
+          short span, I transitioned from an award-winning career in Finance and
+          FinTech marketing to fully embrace software development. This pivot
+          was inspired by a lifelong hobby and love for coding, which I
+          leveraged even during my marketing tenure to analyse vast datasets.
+        </p>
+        <br />
+        <p data-aos="fade-left">
+          2023 has been an adventurous year for me. I currently reside in Japan,
+          and while I've thoroughly enjoyed my time working and living here,
+          London remains my true home. It's where I intend to further my career
+          and shape my future.
+        </p>
+        <br />
+        <p data-aos="fade-left">
+          While I've predominantly been a Full Stack Engineer, I've grown fond
+          of Frontend development and aspire to specialise in this domain over
+          the next few years. The rapid advancements in frontend technologies
+          captivate me. Some frameworks and tools I'm eager to play with include
+          the T3 stack, Astro, and Bun.
+        </p>
+
+        <br />
         <Link
           activeClass="active"
           to={'contact'}

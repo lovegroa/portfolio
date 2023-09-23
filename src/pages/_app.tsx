@@ -2,6 +2,7 @@ import React from 'react';
 import '../styles/styles.css';
 import 'aos/dist/aos.css';
 import Script from 'next/script';
+import '../components/pacman/pacman.styles.css';
 
 const App = ({Component, pageProps}) => {
   return (
