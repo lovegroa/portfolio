@@ -27,7 +27,7 @@ const Projects = ({ref2}) => {
       title: 'Pacman',
       description: ``,
       frontend: ['Vanilla JS', 'React', 'Typescript'],
-      backend: ['GitHub Pages'],
+      backend: ['Sheety', 'GitHub Pages'],
       img: '/pacman.png',
       link: 'https://lovegroa.github.io/pacman/',
       buttonText: 'Check it out',
