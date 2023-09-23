@@ -118,7 +118,7 @@ export default function Pacman() {
           height: '100px',
           backgroundColor: ' rgba(0, 0, 0, 0.3)',
           padding: '20px 20px 0 20px',
-          display: lives ? undefined : 'none',
+          display: lives ? '' : 'none',
         }}
       >
         <div
@@ -168,7 +168,7 @@ export default function Pacman() {
       <div
         style={{
           backgroundColor: ' rgba(0, 0, 0, 0.3)',
-          display: lives ? 'flex' : undefined,
+          display: lives ? 'flex' : 'none',
         }}
       >
         <GameContainer
