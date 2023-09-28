@@ -34,13 +34,6 @@ const AboutMe = ({ref2}) => {
         </p>
         <br />
         <p data-aos="fade-left">
-          I’ll be back in the UK and available to start from the 1st of February
-          2024. If any opportunities arise before then and permit remote work,
-          please do reach out!
-        </p>
-
-        <br />
-        <p data-aos="fade-left">
           I am a dedicated developer with a passion for{' '}
           <strong style={{fontWeight: 'bold'}}>React</strong> and{' '}
           <strong style={{fontWeight: 'bold'}}>TypeScript</strong>. Within a
